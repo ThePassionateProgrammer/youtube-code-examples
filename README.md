@@ -14,19 +14,11 @@ Companion code for my YouTube programming tutorials.
 2. Navigate to the episode folder (e.g., `ep02-dependency-injection/`)
 3. Each episode has a README with setup instructions and context
 
-## Running the Examples
+## About the Examples
 
-Most examples are Python. To run them:
+Most examples are Python code snippets designed to **illustrate concepts** from the videos. Many are not meant to be executed directly—they demonstrate patterns, show before/after comparisons, or highlight specific design decisions.
 
-```bash
-# Navigate to an episode folder
-cd ai-driven-design-thinking/ep02-dependency-injection
-
-# Run a specific file
-python 01_bad_no_seam.py
-```
-
-No virtual environment or dependencies required for most examples—they're designed to be simple and self-contained.
+Future episodes will include fully executable examples where appropriate.
 
 ## Structure
 
