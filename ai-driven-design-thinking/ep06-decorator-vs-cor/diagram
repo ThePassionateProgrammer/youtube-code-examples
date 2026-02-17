@@ -1,0 +1,19 @@
+
+TWO PATTERNS PEOPLE OFTEN CONFUSE
+--------------------------------------------
+DECORATOR:
+LoggingDecorator  <>----  PaymentProcessor
+     |
+     v  (inherits)
+ProcessorDecorator -----> process()
+     ^
+     |
+MetricsDecorator  <>----  PaymentProcessor
+RetryDecorator    <>----  PaymentProcessor
+--------------------------------------------
+CHAIN OF RESPONSIBILITY:
+BaseHandler  <>----  BaseHandler(next)
+    ^
+    |
+ FraudCheck
+ --------------------------------------------
