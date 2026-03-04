@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class CheckoutService {
+  - _discount_factory: DiscountStrategyFactory
+  + total_after_discount_cents(order: Order): int
+}
+
+class DiscountStrategyFactory {
+  + create(order: Order): DiscountStrategy
+}
+
+interface DiscountStrategy {
+  + process(order: Order): int
+}
+
+class VipDiscount
+class EmployeeDiscount
+class SeasonalDiscount
+class _NoDiscount
+
+DiscountStrategy <|.. VipDiscount
+DiscountStrategy <|.. EmployeeDiscount
+DiscountStrategy <|.. SeasonalDiscount
+DiscountStrategy <|.. _NoDiscount
+
+CheckoutService --> DiscountStrategyFactory : uses
+DiscountStrategyFactory ..> DiscountStrategy : returns
+
+@enduml
