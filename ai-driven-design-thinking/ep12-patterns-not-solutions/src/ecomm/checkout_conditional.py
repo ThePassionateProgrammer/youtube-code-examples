@@ -1,22 +1,15 @@
 from __future__ import annotations
 from dataclasses import dataclass
-
 from ecomm.domain import Order, CustomerType
-
-
 @dataclass(frozen=True)
 class PricingResult:
     subtotal_cents: int
     discount_cents: int
     total_cents: int
-
-
 class CheckoutProcessor:
     """TRAP VERSION: identity coupling + growing conditionals."""
-
     def calculate_total(self, order: Order) -> PricingResult:
         discount = 0
-
         # --- Identity coupling lives here ---
         if order.customer.customer_type == CustomerType.VIP:
             discount += int(order.subtotal_cents * 0.20)

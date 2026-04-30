@@ -7,6 +7,8 @@ class DiscountProcessor:
             return int(order.subtotal_cents * 0.20)
         if order.customer.is_employee:
             return int(order.subtotal_cents * 0.30)
+        if order.customer.is_seasonal:
+            return int(order.subtotal_cents * 0.10)
         return 0
 
 class DiscountFactory:
