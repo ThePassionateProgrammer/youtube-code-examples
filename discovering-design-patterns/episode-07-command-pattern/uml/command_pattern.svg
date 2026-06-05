@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#e5e7eb"/></marker>
+<marker id="hollow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#0b1020" stroke="#e5e7eb"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="550.0" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Command Pattern — Canonical UML</text>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="60" y="90" width="220" height="115" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="170.0" y="116" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Client</text>
+<line x1="60" y1="130" x2="280" y2="130" stroke="#ffb703" stroke-width="1"/>
+<text x="74" y="154" font-size="15" fill="#e5e7eb">creates command</text>
+<rect x="410" y="90" width="250" height="115" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="535.0" y="116" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Invoker</text>
+<line x1="410" y1="130" x2="660" y2="130" stroke="#ffb703" stroke-width="1"/>
+<text x="424" y="154" font-size="15" fill="#e5e7eb">+ set_command()</text>
+<text x="424" y="176" font-size="15" fill="#e5e7eb">+ invoke()</text>
+<rect x="410" y="300" width="250" height="120" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="535.0" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">«interface» Command</text>
+<line x1="410" y1="340" x2="660" y2="340" stroke="#ffb703" stroke-width="1"/>
+<text x="424" y="364" font-size="15" fill="#e5e7eb">+ execute()</text>
+<rect x="730" y="300" width="280" height="145" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="870.0" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">ConcreteCommand</text>
+<line x1="730" y1="340" x2="1010" y2="340" stroke="#ffb703" stroke-width="1"/>
+<text x="744" y="364" font-size="15" fill="#e5e7eb">- receiver</text>
+<text x="744" y="386" font-size="15" fill="#e5e7eb">+ execute()</text>
+<rect x="730" y="520" width="280" height="95" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="870.0" y="546" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Receiver</text>
+<line x1="730" y1="560" x2="1010" y2="560" stroke="#ffb703" stroke-width="1"/>
+<text x="744" y="584" font-size="15" fill="#e5e7eb">+ action()</text>
+<line x1="280" y1="148" x2="410" y2="148" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="345.0" y="140.0" text-anchor="middle" font-size="14" fill="#d1d5db">configures</text>
+<line x1="535" y1="205" x2="535" y2="300" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="535.0" y="244.5" text-anchor="middle" font-size="14" fill="#d1d5db">calls</text>
+<line x1="660" y1="360" x2="730" y2="360" stroke="#e5e7eb" stroke-width="2" marker-end="url(#hollow)"/><text x="695.0" y="352.0" text-anchor="middle" font-size="14" fill="#d1d5db">implements</text>
+<line x1="870" y1="445" x2="870" y2="520" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="870.0" y="474.5" text-anchor="middle" font-size="14" fill="#d1d5db">delegates</text>
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#e5e7eb"/></marker>
+<marker id="hollow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#0b1020" stroke="#e5e7eb"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="550.0" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Proxy Pattern — Canonical UML</text>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="80" y="250" width="220" height="110" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="190.0" y="276" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Client</text>
+<line x1="80" y1="290" x2="300" y2="290" stroke="#ffb703" stroke-width="1"/>
+<text x="94" y="314" font-size="15" fill="#e5e7eb">uses subject</text>
+<rect x="430" y="90" width="250" height="120" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="555.0" y="116" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">«interface» Subject</text>
+<line x1="430" y1="130" x2="680" y2="130" stroke="#ffb703" stroke-width="1"/>
+<text x="444" y="154" font-size="15" fill="#e5e7eb">+ request()</text>
+<rect x="400" y="300" width="240" height="125" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="520.0" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Proxy</text>
+<line x1="400" y1="340" x2="640" y2="340" stroke="#ffb703" stroke-width="1"/>
+<text x="414" y="364" font-size="15" fill="#e5e7eb">- real_subject</text>
+<text x="414" y="386" font-size="15" fill="#e5e7eb">+ request()</text>
+<rect x="720" y="300" width="250" height="125" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="845.0" y="326" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">RealSubject</text>
+<line x1="720" y1="340" x2="970" y2="340" stroke="#ffb703" stroke-width="1"/>
+<text x="734" y="364" font-size="15" fill="#e5e7eb">+ request()</text>
+<line x1="300" y1="305" x2="400" y2="360" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="350.0" y="324.5" text-anchor="middle" font-size="14" fill="#d1d5db">request</text>
+<line x1="520" y1="300" x2="520" y2="210" stroke="#e5e7eb" stroke-width="2" marker-end="url(#hollow)"/><text x="520.0" y="247.0" text-anchor="middle" font-size="14" fill="#d1d5db">implements</text>
+<line x1="845" y1="300" x2="555" y2="210" stroke="#e5e7eb" stroke-width="2" marker-end="url(#hollow)"/><text x="700.0" y="247.0" text-anchor="middle" font-size="14" fill="#d1d5db">implements</text>
+<line x1="640" y1="360" x2="720" y2="360" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="680.0" y="352.0" text-anchor="middle" font-size="14" fill="#d1d5db">controls access</text>
+</g>
+</svg>

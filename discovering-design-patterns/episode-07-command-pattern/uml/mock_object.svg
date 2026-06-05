@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#e5e7eb"/></marker>
+<marker id="hollow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#0b1020" stroke="#e5e7eb"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#0b1020"/>
+<text x="550.0" y="42" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Mock Object — Test Double UML</text>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="60" y="250" width="220" height="115" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="170.0" y="276" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Test</text>
+<line x1="60" y1="290" x2="280" y2="290" stroke="#ffb703" stroke-width="1"/>
+<text x="74" y="314" font-size="15" fill="#e5e7eb">arrange</text>
+<text x="74" y="336" font-size="15" fill="#e5e7eb">act</text>
+<text x="74" y="358" font-size="15" fill="#e5e7eb">assert</text>
+<rect x="380" y="90" width="250" height="120" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="505.0" y="116" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">«interface» Collaborator</text>
+<line x1="380" y1="130" x2="630" y2="130" stroke="#ffb703" stroke-width="1"/>
+<text x="394" y="154" font-size="15" fill="#e5e7eb">+ operation()</text>
+<rect x="340" y="310" width="260" height="140" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="470.0" y="336" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">SystemUnderTest</text>
+<line x1="340" y1="350" x2="600" y2="350" stroke="#ffb703" stroke-width="1"/>
+<text x="354" y="374" font-size="15" fill="#e5e7eb">- collaborator</text>
+<text x="354" y="396" font-size="15" fill="#e5e7eb">+ do_work()</text>
+<rect x="720" y="310" width="260" height="145" rx="8" fill="#111827" stroke="#ffb703" stroke-width="2"/>
+<text x="850.0" y="336" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">MockCollaborator</text>
+<line x1="720" y1="350" x2="980" y2="350" stroke="#ffb703" stroke-width="1"/>
+<text x="734" y="374" font-size="15" fill="#e5e7eb">+ operation()</text>
+<text x="734" y="396" font-size="15" fill="#e5e7eb">+ verify_called()</text>
+<line x1="280" y1="305" x2="340" y2="365" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="310.0" y="327.0" text-anchor="middle" font-size="14" fill="#d1d5db">exercises</text>
+<line x1="470" y1="310" x2="500" y2="210" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="485.0" y="252.0" text-anchor="middle" font-size="14" fill="#d1d5db">depends on</text>
+<line x1="850" y1="310" x2="545" y2="210" stroke="#e5e7eb" stroke-width="2" marker-end="url(#hollow)"/><text x="697.5" y="252.0" text-anchor="middle" font-size="14" fill="#d1d5db">implements</text>
+<line x1="600" y1="375" x2="720" y2="375" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/><text x="660.0" y="367.0" text-anchor="middle" font-size="14" fill="#d1d5db">substitutes</text>
+</g>
+</svg>
